@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html class="no-touch" lang="es"><head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8">
+    <title>Estadisticas</title>
+
+    <meta name="keywords" content="NBA, estadisticas">
+    <meta name="author" content="Javier García González">
+    <meta name="description" content="Estadisticas de los jugadores">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="estadisticas.js"></script>
+</head>
+
+<body>
+
+    <header>    
+        <nav>
+            <a href="salario_medio.html" accesskey="i" tabindex=1>salario medio</a>
+            <a href="datos.html" accesskey="t" tabindex=2>Datos</a>
+            <a href="edad_media.html" accesskey="e" tabindex=3>edad media</a>
+            <a href="entrenador.html" accesskey="q" tabindex="4">entrenador</a>
+            <a href="EquiposNBA.html" accesskey="l" tabindex="5">equipos</a>
+            <a href="Lector.html" accesskey="s" tabindex="6">lector</a>
+            <a href="MiLocalizacion.html" accesskey="n" tabindex="7">localizacion</a>
+            <a href="record.html" accesskey="c" tabindex="8">record</a>
+            <a href="Estadisticas.html" accesskey="w" tabindex="9">estadisticas</a>
+        </nav>   
+    </header>
+
+    <!-- Datos con el contenidos que aparece en el navegador -->
+    <main>
+        <article>
+        <h1>Estadisticas de los jugadores</h1>
+        <h2>Escoger a un jugador para ver sus estadísticas</h2>
+        <input type="text">
+        <input type="button" value="Ver estadisticas" onclick="generadorEstadisticas.verJSON();"><section><h3>Datos del jugador:</h3><ul><li>Nombre: Anthony Davis</li><li>Posicion: F-C</li><li>Altura: 6'10 feet</li><li>Peso: 253 libras</li><li>Equipo: Los Angeles Lakers</li></ul><h3>Estadísticas:</h3><ul><li>Partidos Jugados: 39</li><li>Minutos: 35:03</li><li>Puntos: 23.31</li><li>Rebotes: 9.87</li><li>Asistencias: 3.03</li><li>Robos: 1.26</li><li>Tapones: 2.26</li><li>Perdidas: 2.08</li><li>Faltas: 2.38</li></ul></section>
+        </article>
+    </main>
+    <footer>Autor: Javier Garcia Gonzalez</footer>
+
+</body></html>

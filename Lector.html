@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html class="no-touch" lang="es"><head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8">
+    <title>Lector</title>
+
+    <meta name="keywords" content="NBA, entradas, lector entradas">
+    <meta name="author" content="Javier García González">
+    <meta name="description" content="Muestra el contenido de entradas de partidos">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="lectorEntradas.js"></script>
+</head>
+
+<body>
+
+    <header>    
+        <nav>
+            <a href="salario_medio.html" accesskey="i" tabindex=1>salario medio</a>
+            <a href="datos.html" accesskey="t" tabindex=2>Datos</a>
+            <a href="edad_media.html" accesskey="e" tabindex=3>edad media</a>
+            <a href="entrenador.html" accesskey="q" tabindex="4">entrenador</a>
+            <a href="EquiposNBA.html" accesskey="l" tabindex="5">equipos</a>
+            <a href="Lector.html" accesskey="s" tabindex="6">lector</a>
+            <a href="MiLocalizacion.html" accesskey="n" tabindex="7">localizacion</a>
+            <a href="record.html" accesskey="c" tabindex="8">record</a>
+            <a href="Estadisticas.html" accesskey="w" tabindex="9">estadisticas</a>
+        </nav>    
+    </header>
+
+    <!-- Datos con el contenidos que aparece en el navegador -->
+    <main>
+        <article>
+        <h1>Lector de entradas</h1>
+        <section>
+            <h2>Introduce aqui la entrada:</h2>
+            <input type="file" name="upload" onchange="lectorEntradas.seleccionarEntrada()" multiple="">
+            <pre>Partido: Chicago Bulls - Toronto Raptors<br><br>Lugar: United Center<br>Dia y hora: 24/03/2022, 8:00 P.M.<br><br>Asiento:276, sector C<br>Partido: Miami Heat - Boston Celtics<br><br>Lugar: TD Garden<br>Dia y hora: 18/03/2022, 6:00 P.M.<br><br>Asiento:34, sector B<br></pre>
+            </section>
+        </article>
+    </main>
+    <footer>Autor: Javier Garcia Gonzalez</footer>
+
+</body></html>

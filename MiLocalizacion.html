@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html class="no-touch" lang="es"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8">
+    <title>Mi localizacion</title>
+
+    <meta name="keywords" content="NBA, localizacion">
+    <meta name="author" content="Javier García González">
+    <meta name="description" content="Muestra mi localizacion con respecto a algunos equipos de la NBA">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="MiLocalizacion_files/estilo.css">
+
+    <script src="MiLocalizacion_files/mapbox-gl.js"></script>
+    <script src="MiLocalizacion_files/jquery.js"></script>
+    <script src="MiLocalizacion_files/generadorMapa.js"></script>
+</head>
+
+<body>
+
+    <header>    
+        <nav>
+            <a href="salario_medio.html" accesskey="i" tabindex=1>salario medio</a>
+            <a href="datos.html" accesskey="t" tabindex=2>Datos</a>
+            <a href="edad_media.html" accesskey="e" tabindex=3>edad media</a>
+            <a href="entrenador.html" accesskey="q" tabindex="4">entrenador</a>
+            <a href="EquiposNBA.html" accesskey="l" tabindex="5">equipos</a>
+            <a href="Lector.html" accesskey="s" tabindex="6">lector</a>
+            <a href="MiLocalizacion.html" accesskey="n" tabindex="7">localizacion</a>
+            <a href="record.html" accesskey="c" tabindex="8">record</a>
+            <a href="Estadisticas.html" accesskey="w" tabindex="9">estadisticas</a>
+        </nav>  
+    </header>
+
+    <!-- Datos con el contenidos que aparece en el navegador -->
+    <main>
+        <article>
+        <h1>Mi localizacion actual</h1>
+        <section>
+            <h2>Mi localizacion con respecto a otros equipos de la NBA</h2>
+            <input type="button" value="Obtener mi posicion" onclick="localizacion.cargarDatos();"><p>Se ha realizado correctamente la petición de localización</p><h3>Datos de mi ubicacion actual</h3><p>Longitud: -5.701632grados </p><p>Latitud: 43.5388416 grados</p><p>Precision de la longitud y latitud: 1207.3986214967993 metros</p><p>Altitud: null metros</p><p>Precision de la altitud: null metros</p><p>Rumbo: null grados</p><p>Velocidad: null m/s</p><img src="MiLocalizacion_files/staticmap.png" alt="mapa'">
+            </section>
+        </article>
+    </main>
+    <footer>Autor: Javier Garcia Gonzalez</footer>
+
+</body></html>

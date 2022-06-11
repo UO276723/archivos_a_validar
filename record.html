@@ -1,0 +1,63 @@
+
+<!DOCTYPE HTML>
+
+<html lang='es'>
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset='UTF-8' />
+    <title>NBA</title>
+
+    <meta name='keywords' content='NBA, resultados NBA'>
+    <meta name='author' content='Javier García González'>
+    <meta name='description' content='Centro de datos de la NBA(equipos, jugadores, partidos..)'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <link rel='stylesheet' type='text/css' href='estilo.css' />
+</head>
+
+<body>
+
+    <header>    
+        <nav>
+            <a href="salario_medio.html" accesskey="i" tabindex=1>salario medio</a>
+            <a href="datos.html" accesskey="t" tabindex=2>Datos</a>
+            <a href="edad_media.html" accesskey="e" tabindex=3>edad media</a>
+            <a href="entrenador.html" accesskey="q" tabindex="4">entrenador</a>
+            <a href="EquiposNBA.html" accesskey="l" tabindex="5">equipos</a>
+            <a href="Lector.html" accesskey="s" tabindex="6">lector</a>
+            <a href="MiLocalizacion.html" accesskey="n" tabindex="7">localizacion</a>
+            <a href="record.html" accesskey="c" tabindex="8">record</a>
+            <a href="Estadisticas.html" accesskey="w" tabindex="9">estadisticas</a>
+        </nav>     
+    </header>
+
+    <!-- Datos con el contenidos que aparece en el navegador -->
+    <main>
+        <article>
+        <h1>Centro de datos de la NBA</h1>
+        <section>
+            <h2>Introduce los datos para realizar la búsqueda:</h2>
+            <form action='#' method='post' name='menuForm' enctype='multipart/form-data'>
+
+                <label for='busquedaEquipo'>Equipo: </label>
+                <input type='text' name='barraBusquedaEquipo' id='busquedaEquipo'>
+                <label for='busquedaTemporada'>Temporada: </label>
+                <input type='text' name='barraBusquedaTemporada' id='busquedaTemporada'>
+                <input type='submit' value='Edad media del equipo' name='edadMedia'>
+                <input type='submit' value='Salario total del equipo' name='salario'>
+                <input type='submit' value='Record (victorias y derrotas) del equipo' name='record'>
+                <input type='submit' value='entrenador a cargo del equipo' name='entrenador'>
+            </form>
+
+            
+            </section>
+            <section>
+            <h2>Resultado de la busqueda</h2>
+
+            <section><h3>Victorias y derrotas del equipo Boston Celtics durante la temporada 2021:</h3><p>Victorias: 4, derrotas: 3</p></section>
+            </section>
+        </article>
+    </main>
+    <footer>Autor: Javier Garcia Gonzalez</footer>
+</body>
+</html>
